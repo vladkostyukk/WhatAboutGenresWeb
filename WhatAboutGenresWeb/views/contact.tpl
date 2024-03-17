@@ -1,16 +1,34 @@
 % rebase('layout.tpl', title=title, year=year)
 
-<h2>{{ title }}.</h2>
-<h3>{{ message }}</h3>
+<div class="contacts-bg"></div>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:Телефоны</abbr>
-    425.555.0100
-</address>
+<h1 class="contacts-title">Авторы сайта</h1>
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+<div class="contacts-title-bg"></div>
+
+<div class="contacts-authors">
+	<div class="contacts-author">
+		<div class="contacts-author-title">
+			Вайда
+		</div>
+		<div class="contacts-author-content">
+			<i></i><span>it4katya@gmail.com</span>
+		</div>
+	</div>
+	<div class="contacts-author">
+		<div class="contacts-author-title">
+			Кривёнышев
+		</div>
+		<div class="contacts-author-content">
+			<i></i><span>weidermartenn@gmail.com</span>
+		</div>
+	</div>
+	<div class="contacts-author">
+		<div class="contacts-author-title">
+			Костюк
+		</div>
+		<div class="contacts-author-content">
+			<i></i><span>vlad2005.costyuk@yandex.ru</span>
+		</div>
+	</div>
+</div>
