@@ -1,11 +1,14 @@
 % rebase('layout.tpl', title='Home Page', year=year)
 
+<!-- Фоновое изображение -->
 <div class="background-main"></div>
 
+<!-- Заголовок страницы -->
 <div>
     <h1 class="text-main">Узнайте больше о жанрах музыки</h1>
 </div>
 
+<!-- Слайд-шоу изображений (карусель) -->
 <div class="border-carousel">
     <div id="carouselExampleIndicators" class="carousel carousel-fade slide my-carousel" data-bs-ride="carousel">
         <div class="carousel-indicators">

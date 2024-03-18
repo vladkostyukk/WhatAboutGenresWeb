@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <body >
+    <!-- Панель навигации -->
     <div class="navigator">
         <span class="genres-text">What About Genres</span>
         <a href="/genre" class="nav-button">ЖАНРЫ</a>

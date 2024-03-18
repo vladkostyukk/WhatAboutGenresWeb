@@ -1,3 +1,5 @@
+/* Стили панели навигации */
+
 .navigator {
     display: flex;
     justify-content: flex-end;
@@ -44,6 +46,8 @@
     margin-right: 150px;
 }
 
+/* Стили файла home.tpl */
+
 .background-main {
     position: absolute;
     width: 100%;
@@ -63,6 +67,7 @@
     display: flex;
     font-weight: bold;
     font-size: 40px;
+    font-family: 'Inter';
 }
 
 .border-carousel {
