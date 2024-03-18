@@ -18,13 +18,13 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="..." class="d-block w-100" alt="...">
+                <img src="static/images/main-carousel-1.jpg" class="d-block w-100" alt="Исследуйте любой жанр">
             </div>
             <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
+                <img src="static/images/main-carousel-2.jpg" class="d-block w-100" alt="Узнайте историю артистов">
             </div>
             <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
+                <img src="static/images/main-carousel-3.jpg" class="d-block w-100" alt="Альбомы для себя">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
