@@ -66,7 +66,7 @@
     <Content Include="static\scripts\_references.js" />
     <Content Include="views\genre.tpl" />
     <Content Include="views\contact.tpl" />
-    <Content Include="views\index.tpl" />
+    <Content Include="views\home.tpl" />
     <Content Include="views\layout.tpl" />
   </ItemGroup>
   <ItemGroup>
