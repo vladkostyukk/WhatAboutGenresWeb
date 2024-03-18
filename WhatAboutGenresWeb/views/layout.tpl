@@ -28,9 +28,9 @@
 
     <div class="container body-content">
         {{!base}}
-        <hr />
+        <hr style="color: white;"/>
         <footer>
-            <p>&copy; {{ year }} - My Bottle Application</p>
+            <p style="color: white;">&copy; {{ year }} - My Bottle Application</p>
         </footer>
     </div>
 
