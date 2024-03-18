@@ -64,3 +64,27 @@
     font-weight: bold;
     font-size: 40px;
 }
+
+.border-carousel {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.my-carousel {
+    display: flex;
+    width: 800px;
+    height: 400px;
+}
+
+.my-carousel .carousel-item {
+    display: flex;
+}
+
+.my-carousel .carousel-item img {
+    object-fit: cover;
+}
+
+.carousel-indicators {
+    width: auto;
+}
