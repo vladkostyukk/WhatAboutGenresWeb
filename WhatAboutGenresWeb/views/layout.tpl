@@ -17,7 +17,17 @@
     <body >
     <div class="navigator">
         <span class="genres-text">What About Genres</span>
-        <a href="/genre" class="nav-button">ЖАНРЫ</a>
+        <div class="dropdown">
+            <a href="/genre" class="nav-button">ЖАНРЫ</a>
+            <div class="genres-dropdown-content">
+                <a href="#">Альтернативный рок</a>
+                <a href="#">Блюз</a>
+                <a href="#">Вестерн</a>
+                <a href="#">Готика</a>
+                <a href="#">Дабстеп</a>
+                <a href="#">...</a>
+            </div>
+        </div>
         <a href="/home" class="nav-button">ГЛАВНАЯ</a>
         <a href="/contact" class="nav-button">О НАС</a>
     </div>
