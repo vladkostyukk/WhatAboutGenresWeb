@@ -28,10 +28,6 @@
 
     <div class="container body-content">
         {{!base}}
-        <hr style="color: white;"/>
-        <footer>
-            <p style="color: white;">&copy; {{ year }} - My Bottle Application</p>
-        </footer>
     </div>
 
     <script src="/static/scripts/jquery-1.10.2.js"></script>
