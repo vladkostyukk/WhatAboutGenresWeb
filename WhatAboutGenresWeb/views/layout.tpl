@@ -22,7 +22,17 @@
     <!-- Панель навигации -->
     <div class="navigator">
         <span class="genres-text">What About Genres</span>
-        <a href="/genre" class="nav-button">ЖАНРЫ</a>
+        <div class="dropdown">
+            <a href="/genre" class="nav-button">ЖАНРЫ</a>
+            <div class="genres-dropdown-content">
+                <a href="https://www.last.fm/ru/tag/alternative+rock/artists">Альтернативный рок</a>
+                <a href="https://101.ru/radio/channel/76">Блюз</a>
+                <a href="https://www.last.fm/ru/tag/western">Вестерн</a>
+                <a href="https://www.last.fm/ru/tag/gothic+rock/artists">Готик-рок</a>
+                <a href="https://licensing.jamendo.com/ru/royalty-free-music/genres/electronic/dubstep">Дабстеп</a>
+                <a href="#">...</a>
+            </div>
+        </div>
         <a href="/home" class="nav-button">ГЛАВНАЯ</a>
         <a href="/contact" class="nav-button">О НАС</a>
     </div>
