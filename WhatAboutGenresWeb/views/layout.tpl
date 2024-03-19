@@ -30,7 +30,6 @@
                 <a href="https://www.last.fm/ru/tag/western">Вестерн</a>
                 <a href="https://www.last.fm/ru/tag/gothic+rock/artists">Готик-рок</a>
                 <a href="https://licensing.jamendo.com/ru/royalty-free-music/genres/electronic/dubstep">Дабстеп</a>
-                <a href="#">...</a>
             </div>
         </div>
         <a href="/home" class="nav-button">ГЛАВНАЯ</a>

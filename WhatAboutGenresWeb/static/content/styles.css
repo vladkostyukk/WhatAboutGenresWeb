@@ -30,11 +30,14 @@
     font-size: 30px;
     font-weight: bold;
     line-height: 15px;
+    text-decoration: none;
     transition: background-color 0.5s;
 }
 
     .nav-button:hover {
         background-color: rgba(160, 160, 160, 0.67);
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.86);
     }
 
     .nav-button:active {
@@ -52,7 +55,7 @@
     background-color: rgba(0, 0, 0, 0.86);
     min-width: 250px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.86);
-    z-index: 1;
+    z-index: 2;
 }
 
 .genres-dropdown-content a {
@@ -65,6 +68,8 @@
 
 .genres-dropdown-content a:hover {
     background-color: rgba(160, 160, 160, 0.67);
+    color: rgba(0, 0, 0, 0.86);
+
 }
 
 .dropdown:hover .genres-dropdown-content {
