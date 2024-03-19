@@ -207,3 +207,329 @@
         font-size: 13px;
         filter: blur(0.3px);
     }
+.genres-background {
+    background: url('https://sun9-75.userapi.com/impg/QoLo3gEWtettM5gFs94N8PywXUV0UkI6n6-GIw/ybT_MQw9jr0.jpg?size=1920x1080&quality=96&sign=23736655244996bd4722e7d63144ea5c&type=album');
+    background-size: cover;
+    background-position: top;
+}
+
+/* Стили панели навигации */
+
+.navigator {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.86);
+    width: 100%;
+    height: 100px;
+    left: 0;
+    top: 0;
+}
+
+.nav-button {
+    width: 250px;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: aliceblue;
+    background-color: transparent;
+    font-family: 'Inter';
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 15px;
+    transition: background-color 0.5s;
+}
+
+.nav-button:hover {
+    background-color: rgba(160, 160, 160, 0.67);
+}
+
+.nav-button:active {
+    background-color: rgb(255, 255, 255);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.genres-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.86);
+    min-width: 250px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.86);
+    z-index: 2;
+}
+
+.genres-dropdown-content a {
+    color: aliceblue;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.genres-dropdown-content a:hover {
+    background-color: rgba(160, 160, 160, 0.67);
+}
+
+.dropdown:hover .genres-dropdown-content {
+    display: block;
+}
+
+.genres-text {
+    font-size: 40px;
+    color: aliceblue;
+    font-family: 'Inter';
+    font-weight: bold;
+    margin-right: 15%;
+}
+
+.name-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.86);
+    width: 100%;
+    height: 10%;
+    left: 0;
+    top: 25%;
+}
+
+.name-text {
+    font-size: 60px;
+    color: aliceblue;
+    font-family: 'Inter';
+    font-weight: bold;
+    margin-top: -45px;
+    margin-bottom: 15px;
+}
+
+.name-reference {
+    font-size: 20px;
+    color: aliceblue;
+    font-family: 'Inter';
+    font-weight: bold;
+    animation: text-animation 5s infinite;
+}
+
+.name-reference:hover {
+    cursor: pointer;
+    color: rgb(196, 196, 196);
+}
+
+.name-reference:active {
+    color: #ebebec;
+}
+
+@keyframes text-animation {
+    0% {
+        text-shadow: 0px 5px 15px rgba(256, 256, 256, 0.2);
+    }
+
+    50% {
+        text-shadow: 0px 5px 30px rgba(256, 256, 256, 0.6);
+    }
+
+    100% {
+        text-shadow: 0px 5px 15px rgba(256, 256, 256, 0.2);
+    }
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.86);
+    box-shadow: 0px 0px 50px #4242428a;
+    width: 80%;
+    height: 300px;
+    top: 500px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.artist-inner {
+    width: 200px;
+    height: 300px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.781);
+    text-align: center;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.artist-inner:hover {
+    transform: scale(1.05);
+    animation: inner-animation 2s infinite;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+@keyframes inner-animation {
+    0% {
+        box-shadow: 0px 0px 15px rgba(256, 256, 256, 0.2);
+    }
+
+    50% {
+        box-shadow: 0px 0px 25px rgba(256, 256, 256, 0.2);
+    }
+
+    100% {
+        box-shadow: 0px 0px 15px rgba(256, 256, 256, 0.2);
+    }
+}
+
+.artist-wrap {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.artist-wrap img {
+    display: block;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.artist-info {
+    font-family: 'Inter';
+    color: #ebebec;
+}
+
+.artist-info h3 {
+    font-size: 18px;
+    animation: text-animation 5s infinite;
+}
+
+.artist-info span {
+    font-size: 13px;
+    filter: blur(0.3px);
+}
+    
+/* Стили файла home.tpl */
+
+.background-main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../../static/images/main-background.jpeg");
+    background-size: cover;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.text-main {
+    text-transform: uppercase;
+    color: white;
+    margin-top: 100px;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'Inter';
+}
+
+.border-carousel {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.my-carousel {
+    display: flex;
+    width: 800px;
+    height: 400px;
+}
+
+.my-carousel .carousel-item {
+    display: flex;
+}
+
+.my-carousel .carousel-item img {
+    object-fit: cover;
+}
+
+.carousel-indicators {
+    width: auto;
+}
+
+.contacts-bg {
+    background-image: url(../images/contacts_bg.jpg);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-size: cover;
+}
+
+.contacts-title {
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 72px;
+    margin: 2em 0;
+}
+
+.contacts-title-bg {
+    width: 100%;
+    position: absolute;
+    height: 6em;
+    background-color: rgba(0,0,0, .7);
+    z-index: -1;
+    margin: -19em 0;
+    left: 0;
+}
+
+.contacts-authors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contacts-author {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.contacts-author-title {
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(0,0,0, .85);
+    font-size: 18px;
+    padding: 10px 0;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.contacts-author-content {
+    padding: 51px 4px;
+    background-color: rgba(255,255,255, 0.8);
+    font-weight: bold;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.contacts-author-content i {
+    background-image: url('../images/contacts_mail.png');
+    background-size: cover;
+    margin: 0 8px;
+    padding: 6px 14px;
+}

@@ -7,7 +7,7 @@ from datetime import datetime
 
 @route('/')
 @route('/home')
-@view('index')
+@view('home')
 def home():
     """Renders the home page."""
     return dict(
@@ -24,12 +24,12 @@ def contact():
         year=datetime.now().year
     )
 
-@route('/about')
-@view('about')
+@route('/genre')
+@view('genre')
 def about():
-    """Renders the about page."""
+    """Renders the genre page."""
     return dict(
-        title='About',
+        title='genre',
         message='Your application description page.',
         year=datetime.now().year
     )
