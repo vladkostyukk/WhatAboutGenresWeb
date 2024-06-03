@@ -58,19 +58,18 @@
     z-index: 2;
 }
 
-.genres-dropdown-content a {
-    color: aliceblue;
-    padding: 12px 16px;
-    font-size: 14px;
-    text-decoration: none;
-    display: block;
-}
+    .genres-dropdown-content a {
+        color: aliceblue;
+        padding: 12px 16px;
+        font-size: 14px;
+        text-decoration: none;
+        display: block;
+    }
 
-.genres-dropdown-content a:hover {
-    background-color: rgba(160, 160, 160, 0.67);
-    color: rgba(0, 0, 0, 0.86);
-
-}
+        .genres-dropdown-content a:hover {
+            background-color: rgba(160, 160, 160, 0.67);
+            color: rgba(0, 0, 0, 0.86);
+        }
 
 .dropdown:hover .genres-dropdown-content {
     display: block;
@@ -212,6 +211,7 @@
         font-size: 13px;
         filter: blur(0.3px);
     }
+
 .genres-background {
     background: url('https://sun9-75.userapi.com/impg/QoLo3gEWtettM5gFs94N8PywXUV0UkI6n6-GIw/ybT_MQw9jr0.jpg?size=1920x1080&quality=96&sign=23736655244996bd4722e7d63144ea5c&type=album');
     background-size: cover;
@@ -249,13 +249,13 @@
     transition: background-color 0.5s;
 }
 
-.nav-button:hover {
-    background-color: rgba(160, 160, 160, 0.67);
-}
+    .nav-button:hover {
+        background-color: rgba(160, 160, 160, 0.67);
+    }
 
-.nav-button:active {
-    background-color: rgb(255, 255, 255);
-}
+    .nav-button:active {
+        background-color: rgb(255, 255, 255);
+    }
 
 .dropdown {
     position: relative;
@@ -271,17 +271,17 @@
     z-index: 2;
 }
 
-.genres-dropdown-content a {
-    color: aliceblue;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    font-size: 14px;
-}
+    .genres-dropdown-content a {
+        color: aliceblue;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 14px;
+    }
 
-.genres-dropdown-content a:hover {
-    background-color: rgba(160, 160, 160, 0.67);
-}
+        .genres-dropdown-content a:hover {
+            background-color: rgba(160, 160, 160, 0.67);
+        }
 
 .dropdown:hover .genres-dropdown-content {
     display: block;
@@ -325,14 +325,14 @@
     animation: text-animation 5s infinite;
 }
 
-.name-reference:hover {
-    cursor: pointer;
-    color: rgb(196, 196, 196);
-}
+    .name-reference:hover {
+        cursor: pointer;
+        color: rgb(196, 196, 196);
+    }
 
-.name-reference:active {
-    color: #ebebec;
-}
+    .name-reference:active {
+        color: #ebebec;
+    }
 
 @keyframes text-animation {
     0% {
@@ -377,12 +377,12 @@
     transition: 0.5s;
 }
 
-.artist-inner:hover {
-    transform: scale(1.05);
-    animation: inner-animation 2s infinite;
-    transition: 0.5s;
-    cursor: pointer;
-}
+    .artist-inner:hover {
+        transform: scale(1.05);
+        animation: inner-animation 2s infinite;
+        transition: 0.5s;
+        cursor: pointer;
+    }
 
 @keyframes inner-animation {
     0% {
@@ -403,27 +403,27 @@
     margin-bottom: 15px;
 }
 
-.artist-wrap img {
-    display: block;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
+    .artist-wrap img {
+        display: block;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
 
 .artist-info {
     font-family: 'Inter';
     color: #ebebec;
 }
 
-.artist-info h3 {
-    font-size: 18px;
-    animation: text-animation 5s infinite;
-}
+    .artist-info h3 {
+        font-size: 18px;
+        animation: text-animation 5s infinite;
+    }
 
-.artist-info span {
-    font-size: 13px;
-    filter: blur(0.3px);
-}
-    
+    .artist-info span {
+        font-size: 13px;
+        filter: blur(0.3px);
+    }
+
 /* Стили файла home.tpl */
 
 .background-main {
@@ -460,13 +460,13 @@
     height: 400px;
 }
 
-.my-carousel .carousel-item {
-    display: flex;
-}
+    .my-carousel .carousel-item {
+        display: flex;
+    }
 
-.my-carousel .carousel-item img {
-    object-fit: cover;
-}
+        .my-carousel .carousel-item img {
+            object-fit: cover;
+        }
 
 .carousel-indicators {
     width: auto;
@@ -476,7 +476,7 @@
     background-image: url(../images/contacts_bg.jpg);
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     z-index: -1;
@@ -492,6 +492,14 @@
     margin: 2em 0;
 }
 
+.contacts-title2 {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 2em 0;
+}
+
 .contacts-title-bg {
     width: 100%;
     position: absolute;
@@ -502,16 +510,28 @@
     left: 0;
 }
 
+.contacts-title-bg2 {
+    width: 100%;
+    position: absolute;
+    height: 58em;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: -1;
+    margin: -55em 0;
+    left: 0;
+}
+
 .contacts-authors {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .contacts-author {
     display: flex;
     flex-direction: column;
     width: 30%;
+    margin: 10px;
 }
 
 .contacts-author-title {
@@ -526,15 +546,50 @@
 }
 
 .contacts-author-content {
-    padding: 51px 4px;
+    padding: 20px 20px;
     background-color: rgba(255,255,255, 0.8);
     font-weight: bold;
     border-radius: 0px 0px 20px 20px;
 }
 
-.contacts-author-content i {
-    background-image: url('../images/contacts_mail.png');
-    background-size: cover;
-    margin: 0 8px;
-    padding: 6px 14px;
+    .contacts-author-content i {
+        background-image: url('../images/contacts_mail.png');
+        background-size: cover;
+        margin: 0 8px;
+        padding: 6px 14px;
+    }
+
+.company-floating-button {
+    text-decoration: none;
+    display: inline-block;
+    width: 140px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 45px;
+    margin: 20px 16px 0px 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: white;
+    background: #3c3b3b;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+}
+
+    .company-floating-button:hover {
+        background: #978e8e;
+        color: white;
+        text-decoration: none;
+    }
+
+.company-form-tittle {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 19px;
+    margin: 1em 0
 }

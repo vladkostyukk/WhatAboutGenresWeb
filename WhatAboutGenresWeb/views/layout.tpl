@@ -34,6 +34,7 @@
         </div>
         <a href="/home" class="nav-button">ГЛАВНАЯ</a>
         <a href="/contact" class="nav-button">О НАС</a>
+        <a href="/company" class="nav-button">ПАРТНЕРЫ</a>
     </div>
 
     <div class="container body-content">

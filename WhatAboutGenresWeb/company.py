@@ -1,6 +1,4 @@
 from bottle import post, request
-from datetime import datetime
-import re
 
 @post('/company/add_comp', method='post')
 def add_comp():
