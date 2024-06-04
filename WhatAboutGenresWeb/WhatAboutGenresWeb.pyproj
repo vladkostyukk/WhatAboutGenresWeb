@@ -23,6 +23,8 @@
     <UnitTestPattern>test*.py</UnitTestPattern>
     <UnitTestRootDirectory>.</UnitTestRootDirectory>
     <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+    <TestFramework>unittest</TestFramework>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -41,18 +43,23 @@
     <Compile Include="test_active_users.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="testСompany.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="static\" />
     <Folder Include="static\content\" />
     <Folder Include="static\fonts\" />
     <Folder Include="static\images\" />
+    <Folder Include="static\company\" />
     <Folder Include="static\scripts\" />
     <Folder Include="views\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="active_users.json" />
     <Content Include="requirements.txt" />
+    <Content Include="static\company\company_list.txt" />
     <Content Include="static\content\bootstrap.css" />
     <Content Include="static\content\bootstrap.min.css" />
     <Content Include="static\content\site.css" />
@@ -63,12 +70,9 @@
     <Content Include="static\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="static\images\contacts_mail.png" />
     <Content Include="static\images\contacts_bg.jpg" />
-    <Content Include="static\images\main-background.jpeg" />
-    <Content Include="static\images\main-carousel-1.jpg" />
-    <Content Include="static\images\main-carousel-2.jpg" />
-    <Content Include="static\images\main-carousel-3.jpg" />
     <Content Include="static\scripts\bootstrap.js" />
     <Content Include="static\scripts\bootstrap.min.js" />
+    <Content Include="static\scripts\company.js" />
     <Content Include="static\scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="static\scripts\jquery-1.10.2.js" />
     <Content Include="static\scripts\jquery-1.10.2.min.js" />
@@ -82,12 +86,10 @@
     <Content Include="static\scripts\respond.js" />
     <Content Include="static\scripts\respond.min.js" />
     <Content Include="static\scripts\_references.js" />
-    <Content Include="views\active_users.tpl">
-      <SubType>Code</SubType>
-    </Content>
+    <Content Include="views\active_users.tpl" />
     <Content Include="views\genre.tpl" />
+    <Content Include="views\company.tpl" />
     <Content Include="views\contact.tpl" />
-    <Content Include="views\home.tpl" />
     <Content Include="views\layout.tpl" />
   </ItemGroup>
   <ItemGroup>

@@ -35,6 +35,16 @@ def about():
         year=datetime.now().year
     )
 
+@route('/company')
+@view('company')
+def company():
+    """Renders the genre page."""
+    return dict(
+        title='company',
+        message='Your company page.',
+        year=datetime.now().year
+    )
+
 @route('/active_users')
 def active_users():  
     return template('active_users', title='Актив', year=datetime.now().year)
