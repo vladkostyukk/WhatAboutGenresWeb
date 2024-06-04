@@ -51,6 +51,11 @@
         if (response.ok) {
             // Показываем сообщение от сервера в элементе 'message'
             document.getElementById('message').style.display = 'block';
+
+            if (data.response == 'Спасибо за ваше сообщение!') {
+                document.getElementById("contact-form").reset();
+            }
+           
             document.getElementById('message').textContent = data.response;
             tableActiveUser(); // Обновляем список пользователей
         } else {
