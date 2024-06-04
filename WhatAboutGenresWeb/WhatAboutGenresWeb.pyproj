@@ -37,6 +37,9 @@
     </Compile>
     <Compile Include="app.py" />
     <Compile Include="routes.py" />
+    <Compile Include="test_active_users.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="static\" />
