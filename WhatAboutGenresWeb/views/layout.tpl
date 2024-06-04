@@ -34,7 +34,7 @@
             </div>
         </div>
         <a href="/contact" class="nav-button">ОТЗЫВЫ</a>
-        <a href="/contact" class="nav-button">АКТИВ</a>
+        <a href="/active_users" class="nav-button">АКТИВ</a>
         <a href="/contact" class="nav-button">ПАРТНЕРЫ</a>
         <a href="/contact" class="nav-button">О НАС</a>
     </div>
