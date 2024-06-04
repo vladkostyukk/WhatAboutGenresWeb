@@ -32,10 +32,12 @@
 </div>
 
 <script>
+    // При загрузке страницы вызывается функция tableActiveUser()
     window.onload = function() {
         tableActiveUser();
     };
 
+    // Обработка отправки формы
     document.getElementById('contact-form').onsubmit = async function(event) {
         event.preventDefault();
     
@@ -47,23 +49,25 @@
         let data = await response.json();
 
         if (response.ok) {
-            // Если успешно, очистить сообщение об ошибке и вывести сообщение об успехе
+            // Показываем сообщение от сервера в элементе 'message'
             document.getElementById('message').style.display = 'block';
             document.getElementById('message').textContent = data.response;
-            tableActiveUser();
+            tableActiveUser(); // Обновляем список пользователей
         } else {
-            // Если есть ошибки, вывести их в поле сообщения
+            // Выводим сообщение об ошибке
             document.getElementById('message').style.display = 'block';
             document.getElementById('message').textContent = data.response;
         }
     };
 
+    // Функция для получения списка активных пользователей
     async function tableActiveUser() {
         let response = await fetch('/get_list', {
             method: 'GET'
         });
 
         if (response.ok) {
+            // Обработка данных и отображение таблицы
             let data = await response.json();
             let table = document.getElementById('table-active-user');
             table.innerHTML = `<tr><th>Пользователь</th><th>Количество сообщений</th></tr>`;
