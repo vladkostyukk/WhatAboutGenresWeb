@@ -611,12 +611,12 @@
         background: white;
         border-color: black;
         padding: 30px;
+        border-radius: 5px;
     }
 
 #contact-form {
     width: 400px;
     padding: 30px;
-    border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #fff;
     font-size: 14px;
