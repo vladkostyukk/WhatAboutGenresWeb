@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="/static/content/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/static/content/site.css" />
     <link rel="stylesheet" type="text/css" href="/static/content/styles.css" />
-    <link rel="stylesheet" href="/static/content/styles.css">
+    <link rel="stylesheet" href="../static/content/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -22,6 +22,7 @@
     <!-- Панель навигации -->
     <div class="navigator">
         <span class="genres-text">What About Genres</span>
+        <a href="/home" class="nav-button">ГЛАВНАЯ</a>
         <div class="dropdown">
             <a href="/genre" class="nav-button">ЖАНРЫ</a>
             <div class="genres-dropdown-content">
@@ -32,7 +33,9 @@
                 <a href="https://licensing.jamendo.com/ru/royalty-free-music/genres/electronic/dubstep">Дабстеп</a>
             </div>
         </div>
-        <a href="/home" class="nav-button">ГЛАВНАЯ</a>
+        <a href="/contact" class="nav-button">ОТЗЫВЫ</a>
+        <a href="/contact" class="nav-button">АКТИВ</a>
+        <a href="/contact" class="nav-button">ПАРТНЕРЫ</a>
         <a href="/contact" class="nav-button">О НАС</a>
     </div>
 
