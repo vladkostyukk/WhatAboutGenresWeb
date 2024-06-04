@@ -98,3 +98,54 @@ def save_form_data(new_data):
 
     return 'Спасибо за ваше сообщение!'
 
+@post('/get_list', method='GET')
+def get_list():
+    try:
+        with open('active_users.json', 'r', encoding='utf-8') as file:
+            data = json.load(file)
+    except Exception:
+        return {'Здесь можете быть вы': ''}
+
+    if not data:
+        return {'Здесь можете быть вы': ''}
+
+    user_messages_count = {}
+
+    most_active_users = sorted(data, key=lambda entry: len(entry['messages']), reverse=True)[:10]
+    
+    for entry in most_active_users:
+        login = entry['login']
+        messages_count = len(entry['messages'])
+        user_messages_count[login] = messages_count
+        
+    return user_messages_count
+
+# Декоратор для обработки GET-запросов по адресу '/get_list'
+@post('/get_list', method='GET')  
+def get_list(): 
+    try: 
+        # Открытие файла active_users.json для чтения
+        with open('active_users.json', 'r', encoding='utf-8') as file:  
+            # Загрузка данных из файла в переменную data
+            data = json.load(file)  
+    except Exception:
+        # Возврат пустого словаря в случае ошибки чтения файла
+        return {'Здесь можете быть вы': ''}
+
+    # Возврат пустого словаря, если данные отсутствуют
+    if not data:
+        return {'Здесь можете быть вы': ''}  
+
+    # Инициализация словаря для хранения количества сообщений пользователей
+    user_messages_count = {}  
+    
+    # Получение 10 наиболее активных пользователей
+    most_active_users = sorted(data, key=lambda entry: len(entry['messages']), reverse=True)[:10] 
+
+    # Цикл по наиболее активным пользователям
+    for entry in most_active_users:  
+        login = entry['login']  # Получение логина пользователя
+        messages_count = len(entry['messages'])  # Получение количества сообщений пользователя
+        user_messages_count[login] = messages_count  # Запись количества сообщений пользователя в словарь
+
+    return user_messages_count  # Возврат словаря с количеством сообщений для каждого пользователя
